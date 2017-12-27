@@ -49,4 +49,5 @@ RUN wget https://github.com/opencv/opencv/archive/3.3.0.zip \
 && rm -r /opencv-3.3.0
 
 RUN apt-get install -y tesseract-ocr libtesseract-dev libleptonica-dev
+RUN python3 get-pip.py
 RUN pip install requests image tesserocr
